@@ -1,0 +1,27 @@
+footer{
+    margin-top: 20px;
+    background-color: #333;
+    width: 100%;
+    border-radius: 2.5mm;
+}
+ 
+p#footerheadline1{
+    margin-left: 1cm;
+    color: white;
+}
+ 
+p#footerheadline2{
+    font-size: 16px;
+    margin-left: 2cm;
+    color: white;
+}
+ 
+p#footerinhalt{
+    font-size: 15px;
+    margin-left: 2.5cm;
+    color: white;
+}
+
+a#myemail{
+    color: rgb(150, 200, 220);
+}

@@ -1,0 +1,35 @@
+.definitionen{
+    padding: 10px;
+    margin: 0.2em;
+    background-color: rgb(243, 112, 112);
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: max-content;
+    max-width: 380px;
+}
+ 
+.beispiele{
+    padding: 10px;
+    margin: 0.2em;
+    background-color: rgb(238, 138, 44);
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: max-content;
+    max-width: 350px;
+}
+
+.inhalt{
+    margin-left:2cm;
+}
+
+ul#einsatzbereiche{
+    margin-left: 1cm;
+}
+
+p#d_b, #b_d, #d_hd, #hd_d{
+    font-size: 19px;
+}

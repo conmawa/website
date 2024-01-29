@@ -1,0 +1,291 @@
+<!--<?php
+session_start();
+?>-->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/nav2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/everything.css">
+    <link rel="stylesheet" href="../../css/technische_informatik.css">
+    <script src="../../js/menu.js" defer></script>
+    <title>Informatik-Hefter | Klasse 11 | Technische Informatik</title>
+</head>
+
+<body>
+    <br>
+    <h1>Informatik-Hefter am GDP</h1>
+
+    <?php if (isset($_SESSION['user_id'])): ?>
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <div class="head">
+                    <button type="button" class="close-menu-btn"></button>
+                </div>
+                <ul>
+                    <li><a href="../../startseite.php">Home</a></li>
+                    <li><a href="#">Klasse 7</a></li>
+                    <li><a href="#">Klasse 8</a></li>
+                    <li><a href="#">Klasse 9</a></li>
+                    <li class="dropdown"><a href="../klasse_10/klasse_10.php">Klasse 10</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li class="dropdown"><a href="../klasse_10/sprachen.php"><span>Sprachen</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-right">
+                                    <li><a href="../klasse_10/sprachen.php#unterschied_natuerliche_und_formale_sprache"><span>Unterschied natürliche und formale Sprache</span></a></li>
+                                    <li><a href="../klasse_10/sprachen.php#alphabet_und_sprache"><span>Alphabet und Sprache</span></a></li>
+                                    <li><a href="../klasse_10/sprachen.php#formale_sprache"><span>Formale Sprachen</span></a></li>
+                                    <li><a href="../klasse_10/sprachen.php#regulaere_ausdruecke"><span>Reguläre Ausdrücke</span></a></li>
+                                    <li><a href="../klasse_10/sprachen.php#endliche_automaten"><span>Endliche Automaten</span></a></li>
+                                    <li><a href="../klasse_10/sprachen.php#auszeichnungssprachen"><span>Auszeichnungssprachen</span></a></li>
+                                    <li><a href="../klasse_10/sprachen.php#HTML"><span>HTML</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="../klasse_10/netzwerke.php"><span>Netzwerke</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-right">
+                                    <li><a href="../klasse_10/netzwerke.php#netzwerkgeraete"><span>Netzwerkgeräte</span></a></li>
+                                    <li><a href="../klasse_10/netzwerke.php#netzwerkverbindung"><span>Netzwerkverbindung</span></a></li>
+                                    <li><a href="../klasse_10/netzwerke.php#andere_loesungen_fuer_das_netzwerkproblem"><span>Andere Lösungen für das Netzverkproblem</span></a></li>
+                                    <li><a href="../klasse_10/netzwerke.php#netzwerkarchitekturen"><span>Netzwerkarchitekturen</span></a></li>
+                                    <li><a href="../klasse_10/netzwerke.php#protokolle-dienste"><span>Protokolle und Dienste</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="klasse_11.php">Klasse 11</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li class="dropdown"><a href="technische_informatik.php"><span>Technische Informatik</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-left">
+                                    <li class="dropdown"><a href="grundlagen_it.html"><span>Grundlagen</span></a>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <ul class="sub-menu sub-menu-left">
+                                            <li><a href="grundlagen_ti.html#zahlensysteme"><span>Zahlensysteme</span></a></li>
+                                            <li><a href="grundlagen_ti.html#kodierung"><span>Kodierung von Zeichen</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="algorithmen_programmierung.php"><span>Algorithmen und Programmierung</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-left">
+                                    <li class="dropdown"><a href="grundlagen_ap.php"><span>Grundlagen</span></a>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <ul class="sub-menu sub-menu-left">
+                                            <li><a href="grundlagen_ap.php#klassifizierung"><span>Klassifizierung von Programmiersprachen</span></a></li>
+                                            <li><a href="grundlagen_ap.php#kontrollstrukturen"><span>Kontrollstrukuren</span></a></li>
+                                            <li><a href="grundlagen_ap.php#algorithmen"><span>Algorithmen</span></a></li>
+                                            <li><a href="grundlagen_ap.php#unterprogramme"><span>Unterprogramme</span></a></li>
+                                            <li><a href="grundlagen_ap.php#w_und_r"><span>Werte- und Referenzparamter</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="komplexitaet.html"><span>Komplexität</span></a>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="logout"><a href="../../register_form/logout.php">Abmelden</a>
+                </ul>
+            </div>
+            <div class="header-right">
+                <button type="button" class="open-menu-btn">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <br>
+    
+    <div class="inhalt">
+        <h2>1.1. Grundlagen</h2>
+        <br>
+        <hr>
+        <h3 id="zahlensysteme">1.1.1. Zahlensysteme</h3>
+        <br>
+        <h3>Binärzahlen</h3>
+        <br>
+        <p>Einsatzbereiche</p>
+        <ul id="einsatzbereiche">
+            <li>Datenrepräsentation</li>
+            <li>Digitale Schaltungen</li>
+            <li>Speicherung und Übertragung von Daten</li>
+            <li>Prozessorarchitektur</li>
+            <li>Maschinelles Lernen und Künstliche Intelligenz (KI)</li>
+        </ul>
+        <br>
+        
+        <p id="d_b">Dezimal zu Binär</p>
+        <br>
+        <p>Um eine Dezimalzahl in eine Binärzahl umzurechnen, dividiere die Dezimalzahl sukzessiv durch 2 und notiere den Rest bei jeder Division. 
+            Die Binärzahl ist dann die umgekehrte Reihenfolge der Reste.</p>
+        <br>
+        <p>Beispiel: Umrechnung von 21 (Dezimal) in Binär</p>
+        <table id="d_b">
+            <tr>
+                <td>21 / 2 = 10</td>
+                <td>Rest 1</td>
+            </tr>
+            <tr>
+                <td>10 / 2 = 5</td>
+                <td>Rest 0</td>
+            </tr>
+            <tr>
+                <td>5 / 2 = 2</td>
+                <td>Rest 1</td>
+            </tr>
+            <tr>
+                <td>2 / 2 = 1</td>
+                <td>Rest 0</td>
+            </tr>
+            <tr>
+                <td>1 / 2 = 0</td>
+                <td>Rest 1</td>
+            </tr>
+        </table>
+        <br>
+        <p>Binärzahl in umgekehrter Reihenfolge: <b>10101</b> </p>
+
+        <br>
+        <p id="b_d">Binär zu Dezimal</p>
+        <br>
+        <p>Um eine Binärzahl in eine Dezimalzahl umzurechnen, multipliziere jede Binärziffer von rechts nach links mit der entsprechenden 
+            Potenz von 2 und addiere die Ergebnisse.</p>
+        <br>
+        <p>Beispiel: Umrechnung von 10101 (Binär) in Dezimal</p>
+        <table>
+            <tr>
+                <td>1 * 2<sup>4</sup></td>
+                <td>= 16</td>
+            </tr>
+            <tr>
+                <td>0 * 2<sup>3</sup></td>
+                <td>= 0</td>
+            </tr>
+            <tr>
+                <td>1 * 2<sup>2</sup></td>
+                <td>= 4</td>
+            </tr>
+            <tr>
+                <td>0 * 2<sup>1</sup></td>
+                <td>= 0</td>
+            </tr>
+            <tr>
+                <td>1 * 2<sup>0</sup></td>
+                <td>= 1</td>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td> --</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>21</b></td>
+            </tr>
+        </table>
+
+        <br>
+        <h3>Hexadezimalzahlen</h3>
+        <br>
+        <p>Einsatzbereiche</p>
+        <ul id="einsatzbereiche">
+            <li>Speicheradressen</li>
+            <li>Farbcodierung</li>
+            <li>Dateiformate</li>
+            <li>Netzwerkprotokolle</li>
+        </ul>
+        <br>
+        <p>spezielle Zahlen im Hexadezimalbereich:</p>
+        <p>10 = A</p>
+        <p>11 = B</p>
+        <p>12 = C</p>
+        <p>13 = D</p>
+        <p>14 = E</p>
+        <p>15 = F</p>
+        <br>
+        <p id="d_hd">Dezimal zu Hexadezimal</p>
+        <br>
+        <p>Um eine Dezimalzahl in eine Hexadezimalzahl umzurechnen, teile die Dezimalzahl sukzessiv duch 16 und notiere den Rest bei jder Division.
+            Die Hexadezimalzahl ist dann die umgekehrte Reihenfolge der Reste.
+        </p>
+        <br>
+        <p>Beispiel: Umrechnung von 178 (Dezimal) in Hexadezimal</p>
+        <table>
+            <tr>
+                <td>178 / 16 = 11</td>
+                <td>Rest 2</td>
+            </tr>
+            <tr>
+                <td>11 / 16 = 0</td>
+                <td>Rest 11 -> B</td>
+            </tr>
+        </table>
+        <br>
+        <p>Hexadezimalzahl in umgekehrter Reihenfolge: <b>B2</b></p>
+        <br>
+        <p id="hd_d">Hexadezimal zu Dezimal</p>
+        <br>
+        <p>Um eine Hexadezimalzahl in eine Dezimalzahl umzurechnen, multipliziere jede Hexadezimalziffer von rechts nach links der entsprechenden 
+            Potenz von 16 und addiere die Ergebnisse.</p>
+        <br>
+        <p>Beispiel: Umrechnung von 5F (Hexadezimal) in Dezimal</p>
+        <table>
+            <tr>
+                <td>5 * 16<sup>1</sup></td>
+                <td>= 80</td>
+            </tr>
+            <tr>
+                <td>F (15) * 16<sup>0</sup></td>
+                <td>= 15</td>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>95</b></td>
+            </tr>
+        </table>
+
+        <br>
+        <hr>
+        <h3 id="kodierung">1.1.2. Kodierung von zeichen in der Informatik</h3>
+
+    
+    </div>
+    <!--
+    <?php else: ?>
+        <p id="login">Bitte melden Sie sich an, um den Inhalt sehen zu können!</p>
+        <a id="login" href="../../register_form/login.php">Anmelden</a>
+    <?php endif; ?>-->
+    
+</body>
+<footer>
+    <p id="footerheadline1">Impressum:</p>
+    <p id="footerheadline2">Name</p>
+    <p id="footerinhalt">Constantin Liepelt</p>
+    <p id="footerheadline2">Anschrift</p>
+    <p id="footerinhalt">Johann-Meyer-Straße 5</p>
+    <p id="footerinhalt">01097, Dresden</p>
+    <p id="footerheadline2">E-Mail</p>
+    <p id="footerinhalt"><a id="myemail" href="mailto:constantin@liepelts.de">constantin@liepelts.de</a></p>
+    <p id="footerheadline2">Telefonnummer</p>
+    <p id="footerinhalt">+49 1577 538 4556</p>
+
+</footer>
+</html>

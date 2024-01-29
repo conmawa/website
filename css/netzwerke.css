@@ -1,0 +1,57 @@
+.definitionen{
+    padding: 10px;
+    margin: 0.2em;
+    background-color: rgb(243, 112, 112);
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: max-content;
+    max-width: 380px;
+}
+ 
+.beispiele{
+    padding: 10px;
+    margin: 0.2em;
+    background-color: rgb(238, 138, 44);
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: max-content;
+    max-width: 350px;
+}
+
+hr{
+    color: black;
+    background-color: black;
+    height: .2mm;
+}
+
+.inhalt{
+    margin-left:2cm;
+}
+
+ul#vg{
+    margin-left: 5mm;
+}
+
+ul#netzwerkgeraete{
+    margin-left: 1cm;
+}
+
+td{
+    width: max-content;
+    border-style: none;
+    align-items: left;
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+p#ipv4_aufbau{
+    color: rgb(0, 174, 255);
+}
+
+ul#ipv4, ul#ipv6{
+    margin-left: 5mm;
+}

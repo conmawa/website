@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18;
+}
+ 
+input{
+    height: 30px;
+    width: 240px;
+    display: block;
+}
+ 
+input#submit{
+    background-color: #333;
+    border-style: none;
+    border-radius: 2.5mm;
+    height: 50px;
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18;
+    cursor: pointer;
+    transition: transform .2s;
+    color: white
+}
+
+input#submit:hover{
+    transform: scale(1.05);
+}
+ 
+a#register{
+    font-size: 18;
+    text-decoration: none;
+    color: rgb(20, 130, 160);
+}
+
+.login{
+    margin-left: 10mm;
+}

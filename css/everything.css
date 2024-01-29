@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 5mm;
+}
+
+h2{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+h3{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18;
+}
+
+li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18;
+}
+
+ul{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+ol{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18;
+}
+
+li{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+td,th{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+summary{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a#s , #n, #gr, #ti, #ap, #k{
+    color:black;
+    font-size: 18px;
+    margin-left: 1cm;
+}
+
+p#index{
+    margin-left: 1cm;
+    width: 500px;
+}
+
+p#login{
+    margin-left: 1cm;
+}
+
+a#login{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10mm;
+    background-color: #333;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    border-radius: 2.5mm;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+a#login:hover{
+    transform: scale(1.05);
+}
