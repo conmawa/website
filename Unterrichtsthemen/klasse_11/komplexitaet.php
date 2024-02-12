@@ -135,7 +135,7 @@ session_start();
         <br>
         <p>x-Werte = Anzahl n (Länge der Liste)</p>
         <p>y-Werte = Zeit zum sortiern</p>
-        <img src="../../Bilder/komplexitet_bubble_sort.png" alt="Komplexität des Bubble Sortes" width="70%">
+        <img src="../../Bilder/komplexitet_bubble_sort.png" alt="Komplexität des Bubble Sortes" width="60%">
         <br>
         <p>--> Quadratischer Anstieg</p>
         <br>
@@ -143,7 +143,7 @@ session_start();
 
         <h3 id="komplexitaetsklassen">2.2.2. Komplexitätsklassen</h3>
         <br>
-        <img src="../../Bilder/komplexiteaet_uebersicht.png" alt="Übersicht der Komplexitätsklassen" width="60%">
+        <img src="../../Bilder/komplexiteaet_uebersicht.png" alt="Übersicht der Komplexitätsklassen" width="50%">
         <figure>Quelle: <a href="https://studyflix.de/informatik/o-notation-6800">https://studyflix.de/informatik/o-notation-6800</a></figure>
         <br>
         <hr>
