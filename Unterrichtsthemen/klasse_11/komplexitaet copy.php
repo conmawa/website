@@ -150,7 +150,9 @@ session_start();
 
         <h3 id="sortieralgorithmen">2.2.3. Sortieralgorithmen</h3>
         <br>
-        <p>Bubble-Sort: <code>from random import randint
+        <p><details>
+                <summary>Bubble-Sort</summary>
+                from random import randint
 
 def bubble_sort(array):
     # Wiederhole Anzahl der Elemente in der Liste
@@ -171,7 +173,8 @@ for i in range(10):
     lst.append(randint(0,100))
 
 print(lst)
-print(bubble_sort(lst))</code>-> O(n<sup>2</sup>)</p>
+print(bubble_sort(lst))
+            </details>-> O(n<sup>2</sup>)</p>
         <p>Insertion-Sort: <a id="skript" href="python_skripte/insertion_sort.py" download="insertion_sort.py">Datei herunterladen</a> -> O(n<sup>2</sup>)</p>
         <p>Selection-Sort: <a id="skript" href="python_skripte/selection_sort.py" download="selection_sort.py">Datei herunterladen</a> -> O(n<sup>2</sup>)</p>
         <br>
