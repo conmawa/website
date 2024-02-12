@@ -175,7 +175,7 @@ session_start();
         <br>
         <h3>Iteration</h3>
         <ul>
-            <li>Programmierung mit Verwendung von Schleifen (while, if, for)</li>
+            <li>Programmierung mit Verwendung von Schleifen (while, for)</li>
         </ul>
         <br>
 
